@@ -4,8 +4,7 @@
         "front-install": "cd udagram-frontend && npm i",
         "back-build": "cd udagram-api && npm run build",
         "front-build": "cd udagram-frontend && npm run build",
-        "back-run": "cd udagram-api && npm run prod",
-        "front-run": "cd udagram-frontend && npm run start"
+        "front-deploy":"cd udagram-api && npm run deploy"
     },
     "dependencies": {
         "udagram-frontend": "file:udagram-frontend"
