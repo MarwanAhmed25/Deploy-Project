@@ -11,21 +11,21 @@ jobs:
       - checkout
       - aws-cli/setup
       - run:
-          name: Front Install
-          command: |
-            npm run front-install
-      - run:
-          name: Back Install
+          name: Back-Install
           command: |
             npm run back-install
       - run:
-          name: Front Build
+          name: Front-Install
           command: |
-            npm run front-build
+            npm run front-install
       - run:
-          name: Back Build
+          name: back-Build
           command: |
             npm run back-build
+      - run:
+          name: Front-Build
+          command: |
+            npm run front-build
       - run:
           name: Deploy App
           command: |
